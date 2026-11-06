@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0f131d;color:#dfe2f0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#958ea0", "tertiary-fixed": "#ffddb8", "inverse-primary": "#6d3bd7", "tertiary-container": "#ca8100", "surface-container": "#1b1f2a", "surface-container-low": "#171b26", "on-secondary-container": "#ffbad3", "inverse-on-surface": "#2c303b", "primary-fixed-dim": "#d0bcff", "surface-dim": "#0f131d", "on-tertiary-fixed": "#2a1700", "on-surface": "#dfe2f0", "surface-variant": "#313540", "primary": "#d0bcff", "on-tertiary-fixed-variant": "#653e00", "secondary-fixed-dim": "#ffb0cd", "surface-tint": "#d0bcff", "on-secondary-fixed": "#3e0022", "on-tertiary": "#472a00", "error-container": "#93000a", "error": "#ffb4ab", "surface": "#0f131d", "inverse-surface": "#dfe2f0", "primary-container": "#a078ff", "surface-container-highest": "#313540", "tertiary-fixed-dim": "#ffb95f", "secondary-container": "#aa0266", "on-secondary-fixed-variant": "#8c0053", "surface-container-lowest": "#0a0e18", "on-secondary": "#640039", "secondary-fixed": "#ffd9e4", "on-primary": "#3c0091", "on-primary-container": "#340080", "primary-fixed": "#e9ddff", "on-error-container": "#ffdad6", "on-tertiary-container": "#3e2400", "on-background": "#dfe2f0", "on-primary-fixed-variant": "#5516be", "surface-bright": "#353944", "secondary": "#ffb0cd", "on-error": "#690005", "surface-container-high": "#262a35", "outline-variant": "#494454", "on-primary-fixed": "#23005c", "tertiary": "#ffb95f", "on-surface-variant": "#cbc3d7", "background": "#0f131d" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-sm": "0.5rem", "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-lg": "1.5rem", "margin": "2rem", "space-xl": "2.5rem", "margin-mobile": "1rem" }, "fontFamily": { "label-lg": ["Inter"], "label-sm": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Space Grotesk"], "body-sm": ["Inter"], "body-lg": ["Inter"], "body-md": ["Inter"], "headline-md": ["Space Grotesk"], "headline-xl": ["Space Grotesk"], "headline-xl-mobile": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"] }, "fontSize": { "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="CineTogether Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF1iTS5jn6FRDDpjZ0bVZo_gQzqRxf4x90H_TyJEMv_QqFcBgk9q22dRnYd8vYt7wf-KFxtTohkREp8pchQGTNNhy8Pf2CGbzPw-Nj4ZuiB6bTdOGFOEb8ooPdU7_f26m59R3wlqqZcktw7LWmIN8EhWbKhpmyoSID-SNh4Vbj0K-XuiLCfjUjmNc71iA8UQrOkIQlJQ85ibtSB7jzP3g2ZcZ_8fgL4mkjWJ6Uhj6S"/><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight truncate hidden xs:inline">CineTogether</span><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight truncate">Home Feed</span></div><div class="flex items-center gap-space-xs"><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-secondary-container/20 shadow-[0_0_12px_rgba(236,72,153,0.35)]"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider hidden sm:inline">LIVE</span></div><a class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" data-path="catalog-search" href="#"><span class="material-symbols-outlined text-[22px]">search</span></a><a class="w-11 h-11 flex items-center justify-center rounded-full focus:outline-none" data-path="theme-studio-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_10px_rgba(208,188,255,0.4)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB_GMrZhWQiIXEtPUiBOq2ZzLZKq4j31nd4r4DwHQkbGWciCBJ5vEgLMy1CCTPwrv40s9k-636xtfJg95YwrCzqimDWyUcjDJNMxj-hGX56UQbO3UGBm6RpoG2aInhGrsW1SF5KOrsz8LUEs1T3ujBN-LxfhuHaj87wZpOK-TOi34l5ynLZE7CzY9Zuy715TlClQelg53NNYgUrrp1ojZ1RRt__a0DUv9h7NZ_mXIM"/></a></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-8 space-y-space-lg">
+<!-- Top Greeting & Status Switch -->
+<div class="px-margin-mobile pt-space-sm flex items-center justify-between gap-space-sm">
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight font-bold truncate">
+          Hey Alex <span class="inline-block animate-bounce origin-bottom">👋</span>
+</h1>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Ready for cinema night with the crew?</p>
+</div>
+<!-- Status Switch Pill -->
+<button aria-label="Toggle presence state" class="flex-shrink-0 flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high/90 shadow-md backdrop-blur-md active:scale-95 transition-transform" id="statusToggleBtn">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary shadow-[0_0_8px_rgba(255,176,205,0.8)]"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wide">Ready</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">expand_more</span>
+</button>
+</div>
+<!-- Hero Quick Actions: Glowing Bento Glass Banner -->
+<div class="px-margin-mobile">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-lowest p-space-md shadow-xl">
+<!-- Ambient cinema neon glow effect -->
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -left-8 w-36 h-36 bg-secondary-container/25 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm uppercase tracking-wider text-secondary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">bolt</span> Instant Sync 4K
+            </span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Start a Watch Party</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Stream in millimeter lockstep with spatial audio chat</p>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest/80 flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[24px]">theater_comedy</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<!-- Primary Glow Action -->
+<button class="relative group overflow-hidden w-full flex items-center justify-center gap-2 py-3 px-space-md rounded-lg bg-gradient-to-r from-primary-container via-inverse-primary to-secondary-container text-on-primary font-label-lg text-label-lg font-bold shadow-[0_0_20px_rgba(160,120,255,0.45)] hover:shadow-[0_0_28px_rgba(236,72,153,0.6)] active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span>Start Instant Party</span>
+<span class="material-symbols-outlined text-[16px] text-on-primary/70 transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<!-- Secondary Glass Action: Enter Party Code -->
+<button class="w-full flex items-center justify-center gap-2 py-3 px-space-md rounded-lg bg-surface-variant/40 hover:bg-surface-variant/70 text-on-surface font-label-lg text-label-lg backdrop-blur-md active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-[18px] text-primary">pin</span>
+<span>Enter Party Code</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Friends Online Row -->
+<div class="flex flex-col gap-space-sm">
+<div class="px-margin-mobile flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_6px_rgba(255,176,205,0.8)]"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Crew Online</h3>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">5</span>
+</div>
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center gap-0.5" href="#">
+        View all <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+<!-- Horizontal scroll friend strip -->
+<div class="flex gap-space-sm overflow-x-auto px-margin-mobile py-1 no-scrollbar scroll-smooth">
+<!-- Friend 1: Elena (Watching active film) -->
+<div class="flex-shrink-0 w-44 p-2.5 rounded-xl bg-surface-container/70 backdrop-blur-md flex flex-col gap-2 relative shadow-md">
+<div class="flex items-center gap-2">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Portrait avatar of a stylish young woman named Elena with neon purple lighting highlights and headphones in a dark cozy gaming setup, cinematic quality" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM9iKratuWnkjq1_Fs6mZhXJwIcK86nIev7NkwZhSx7UnV_YL4y_F2jVbQ1O_6aygiO16c-4-zlJo36T8LZBpqJvw3trzVvtHXEOHzc1k28HpMBej_MXjVEw75u1hlecKbgPRl7PZOS45G51k1PxqNq3DxJ_ZZlF6Twt_BDvVNAn5Tb1K4ddypMSIKc463QwP5a2NIcQL2uhM3tBbrpVK0DPo0QSbXeUdJkc3f_Wok"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-secondary ring-2 ring-surface shadow-[0_0_6px_rgba(255,176,205,0.9)]"></span>
+</div>
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Elena V.</p>
+<span class="inline-flex items-center gap-0.5 font-label-sm text-label-sm text-secondary truncate">
+<span class="material-symbols-outlined text-[11px] animate-pulse">sensors</span> Live
+            </span>
+</div>
+</div>
+<div class="bg-surface-container-lowest/80 p-1.5 rounded-lg flex flex-col gap-0.5">
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Cyberpunk: EDG</p>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-tertiary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[10px]">timer</span> 01:14:20
+            </span>
+<button aria-label="Peek party" class="text-primary hover:text-primary-fixed">
+<span class="material-symbols-outlined text-[14px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Friend 2: Marcus (In Lobby) -->
+<div class="flex-shrink-0 w-36 p-2.5 rounded-xl bg-surface-container/70 backdrop-blur-md flex flex-col gap-2 relative shadow-md">
+<div class="flex items-center gap-2">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Close up profile photo of a charismatic young man named Marcus smiling in warm cinematic low-key ambient theater lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVTnAFPgQFAXJMqqju6lJEsGHDr-VWpIzICoPYx3isn8K9c7W6nw7uTfV-c7BX3Z2WsMT_mOFiHaPJHV8VviG2DJ2ILj50ThrbFNr4l--QY0ttOEBbzAMvflNcIT7WikJeHJl6X3J_q8tUbxkHwnT8LwHrTf0W_X_6rlGmwSTAHNkEZ3lQf9E580ZHkR21JB4AnMW7qdvThNFenEZeki63nGfu1dkb8gtbWyxoNpnB"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-secondary ring-2 ring-surface shadow-[0_0_6px_rgba(255,176,205,0.9)]"></span>
+</div>
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Marcus T.</p>
+<span class="font-label-sm text-label-sm text-tertiary">In Lobby</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest/80 p-1.5 rounded-lg flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Pre-show lounge</span>
+<button class="font-label-sm text-label-sm text-primary px-1.5 py-0.5 rounded bg-primary-container/20">Join</button>
+</div>
+</div>
+<!-- Friend 3: Sarah K (Browsing) -->
+<div class="flex-shrink-0 w-36 p-2.5 rounded-xl bg-surface-container/70 backdrop-blur-md flex flex-col gap-2 relative shadow-md">
+<div class="flex items-center gap-2">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Profile photo avatar of a smiling young woman Sarah wearing glasses with cinematic blue atmospheric room lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh5O7JXlgn2dG8TEpNdYeOVdQPRwvnJbdxZL2xxj9VUvTTfL-fjCMOQeKz-VNqjaJW9CRYPFaol43XneYo3abaQaWEDPWTK99z8SpFAhcVTyXJCUSYF5tCZ9fWlwqTir8vbYLAv9MiXh-GKG5WRrXgXNSba-EwGPpS3LGxCc9_dOOFuSlIuJObEBYfGbzSiRCssQGXuMzpb6LBunILfIvQe59QYskp_CYXKjv7Ps0V"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-surface-bright ring-2 ring-surface"></span>
+</div>
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Sarah K.</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Browsing</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest/80 p-1.5 rounded-lg flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Sci-Fi catalog</span>
+<span class="material-symbols-outlined text-[14px] text-outline">search</span>
+</div>
+</div>
+<!-- Friend 4: Jin & Maya (Voice Room) -->
+<div class="flex-shrink-0 w-40 p-2.5 rounded-xl bg-surface-container/70 backdrop-blur-md flex flex-col gap-2 relative shadow-md">
+<div class="flex items-center gap-2">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Creative studio headshot of Jin, modern Asian creator with headphones in warm ambient cinema glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfpQkx7hCUilEiU0ph87OHFbsVTq_FUFCVIpnFaygDfMXabEGtxcYN7eFvHFkVnBwM0dMzMEB0Pa55pvPxBYBlOd99Auz6Stfkg9mvQ9WS0i3yCswxEIO7n1eWO6p7t4m3R6wf5nK4OnvepTgpGxeWGc-Lm_4kRp_hkak8kS02Mdmggt-m4QeDXK8sprZSUb-v7Hfg6CSN3PuT9fhRTgeHVFPhp9RZkAsY-kphzGKw"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-secondary ring-2 ring-surface shadow-[0_0_6px_rgba(255,176,205,0.9)]"></span>
+</div>
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Jin Woo</p>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[10px]">graphic_eq</span> Mic on
+            </span>
+</div>
+</div>
+<div class="bg-surface-container-lowest/80 p-1.5 rounded-lg flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Anime Club Room</span>
+<button class="font-label-sm text-label-sm text-primary px-1.5 py-0.5 rounded bg-primary-container/20">Listen</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Continue Watching Together section -->
+<div class="px-margin-mobile">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary">history_toggle_off</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Resume Shared Session</h3>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold">Synced state</span>
+</div>
+<!-- Compact Resume Banner Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high/90 shadow-lg">
+<div class="flex flex-col sm:flex-row">
+<!-- Thumbnail -->
+<div class="relative w-full sm:w-44 h-32 flex-shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Cinematic still from Dune Part Two showing Timothee Chalamet and Zendaya walking against a massive orange desert sand dune sunset with intricate sci-fi stillsuits, atmospheric cinema lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBJ6G8-JYf82zjnauINMGlwywnk9XWGLy6sIaQxk-TnIssX5AdUvhqH4hodmNRBoLYBXveJMIcXpQCqAsEROl560JQYQQ1R7KlYe1mplFGgVKwfPwMRM6PYWD79vXcfm_mL3S98ZEqH8qlHjABZDfybX2PsQu_k9YFMwcCvrZ92_fygvpNuz4Kd-fvghBwZuRscmdZ186LJi-a2vrzUcsJfLBcXILa2vDi0n9lkuQL"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high via-transparent to-transparent sm:bg-gradient-to-r sm:from-transparent sm:to-surface-container-high"></div>
+<div class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-sm text-tertiary font-label-sm text-label-sm flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[12px]">lock</span> PAUSED
+          </div>
+<div class="absolute bottom-2 left-2 flex -space-x-2">
+<img class="w-6 h-6 rounded-full border-2 border-surface object-cover" data-alt="Small round user avatar photo of Sarah smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ0JX8Dya3n1gaSxOJXmY1yR5zM_9stUeopb1tOgT9kuILv5RUPoOnE0ne4pLIm7uSakt_FRahdJSQ0vdYKW2c8p7AGgmxdWHYcSpSPlkA9xocHyXYX4Ie7WqAldGGSQcxBL6FaiDbxSLNVf8bzg4OW33jc_hdWu-Fz8OF0p59lItaResDOa7cT-C5nBbpBLwG1j_p0N54U07y6apa4yy2valIMTxQ-PDvA6bL6A31"/>
+<img class="w-6 h-6 rounded-full border-2 border-surface object-cover" data-alt="Small round user avatar photo of Marcus with headphones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_7BGCmKTpZ6GhXzq3S6ZEdeyh-glBkQ6yrUJ-JDl0khr6KHWkBDaCkJIEtNL5hLvSlWPA_1rAfD2oWvnhFny3T_MLyX4G3a6CmB7saTa_6qz40GKr_xHuCnGKaL4BUYLx_mycGMkYQ791xMXgLpFz6u6LEW8sbGyz14-7iCPfrlxTGh7xb8S0SjY9fZK2KyM98HyfxqrxK-tUFdBcLuxDo7dFz2u5C2YSyDiwbUd0"/>
+<img class="w-6 h-6 rounded-full border-2 border-surface object-cover" data-alt="Small round user avatar photo of Elena" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQHNmwLR44-bngupLYZDORVNj1JDlMeMTP1AAzxgHcIBTHA6H2nrryvbo7PEwOmO3V8xes2puIuejI4AiIAhm1OMouM2JKi1SFlPZ-uTwu0ozprNFIoSoZ_LKyanKKfB7bArCjYc45MeWDWF4egGXN1kaVMaB5tZNV06z7AIlU707Fg8mb4Idr-WZR0gDjJ14UMaKmzA2AfyvZzIf3Yb5ScXx1xITBP-VMGSzHOVC4"/>
+</div>
+</div>
+<!-- Info & Controls -->
+<div class="p-space-sm flex-1 flex flex-col justify-between gap-space-xs">
+<div>
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Dune: Part Two</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">01:48:32 / 02:46:00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Paused by <span class="text-on-surface font-semibold">Marcus</span> • 3 crew members waiting
+            </p>
+</div>
+<!-- Progress scrubber track -->
+<div class="w-full space-y-1">
+<div class="w-full h-1.5 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-secondary rounded-full" style="width: 64%;"></div>
+</div>
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant">
+<span>64% completed</span>
+<span class="text-secondary font-semibold">Spatial Audio Ready</span>
+</div>
+</div>
+<!-- Resume Actions -->
+<div class="flex items-center gap-space-sm pt-1">
+<button class="flex-1 py-1.5 px-3 rounded-lg bg-primary hover:bg-primary-fixed text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 shadow-md active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+              Resume with Party
+            </button>
+<button aria-label="Party settings" class="p-1.5 rounded-lg bg-surface-container-highest/60 hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Watch Parties (Live Now Carousel) -->
+<div class="flex flex-col gap-space-sm">
+<div class="px-margin-mobile flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Parties Live Now</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Swipe to explore</span>
+</div>
+<!-- Carousel Cards -->
+<div class="flex gap-space-md overflow-x-auto px-margin-mobile pb-2 no-scrollbar snap-x snap-mandatory">
+<!-- Party Card 1: Spider-Man Across the Spider-Verse -->
+<div class="snap-start flex-shrink-0 w-80 rounded-xl bg-surface-container-high/90 overflow-hidden shadow-xl flex flex-col relative group">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dynamic shot from Spider-Man Across the Spider-Verse with vibrant neon pink, cyan and violet halftone dots and glowing city skyline at night, hyper-stylized animated cinema aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXzXdlvd_Y8eZKQPs3RBfMy3AKurbKSCDtcDBYw6eM8idWW0wGIkwbCxZbejy3Jy_Sl-TI86ToeMcuNYRtCqaih4g4R_yW2oetzR-ZkGd61llfYD1PgrDTZ3HlBjBzvqPykEz5If_WBxjPaaPwWLaSiczfqkBmJab6azuvI29wVaEANbWjeLSMQaLCW-v39tYPdRruI1FQzZsAlBuS1QcaRwGb9pMXyighnMY-ss_H"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high via-surface-container-high/40 to-transparent"></div>
+<!-- Top status pills -->
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/90 text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> LIVE SYNC
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-tertiary font-label-sm text-label-sm flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[13px]">mic</span> Voice Active
+            </span>
+</div>
+<!-- Host info badge -->
+<div class="absolute top-2.5 right-2.5 flex items-center gap-1 bg-surface-container-lowest/85 backdrop-blur-md px-2 py-0.5 rounded-full">
+<span class="font-label-sm text-label-sm text-tertiary-fixed font-bold">HOST: Maya</span>
+</div>
+<!-- Live Seek Position Overlay -->
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<span class="bg-surface-container-lowest/80 px-1.5 py-0.5 rounded font-mono text-tertiary">01:04:12</span>
+<span class="bg-surface-container-lowest/80 px-1.5 py-0.5 rounded text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-secondary">group</span> 6/8 Seats Filled
+            </span>
+</div>
+</div>
+<!-- Card Body -->
+<div class="p-space-sm flex flex-col gap-space-xs flex-1 justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Across the Spider-Verse</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Miles Morales rockets across the Multiverse with Gwen Stacy</p>
+</div>
+<!-- Live Voice Strip -->
+<div class="flex items-center justify-between bg-surface-container-lowest/60 p-2 rounded-lg">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2">
+<img class="w-6 h-6 rounded-full border-2 border-surface object-cover" data-alt="Avatar headshot of Maya smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm6o-o0bMbuSZKm718WBsXRysNlfkAScjn98u4XBhjtPmaJVZGgEU7zSlTqbKn0Ae53iYpBeFWrYAG8oVACmZzUgg2xVPv3VY_kqa5Z2iUQittDYOl_P7vYCpkMbtddWNF1S9B4FPwef1jZaEMRJchnTVycwb8uGz59qbUlel_maYGEjJs9JyFkhcQIsf2TTrx5LaNvtJr0BFKf0JbT9qSanjrL0RZarND532LcQ8v"/>
+<img class="w-6 h-6 rounded-full border-2 border-surface object-cover" data-alt="Avatar headshot of Liam laughing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbezqRtyw6Jdrycs3c181IogyEcK74Xdlb9a8o4rK-Xz2-7i6ZuQMoGBb1mmlU9QipSXzUVaMkG9WcfnlN_ssqTjMGqpe2rmOvcM5doBd1ld-T_zkglYA55pSmt5qg9F5aeGc7FXAhQvB-7enZ9iU05FixAvURjiV991tLIRSVsLRTm4__1Uq4s5ZsaxR4XygjByb_3qjdsAvDP349SEHnwfk40ZM7FgKQ1NZhesaV"/>
+<img class="w-6 h-6 rounded-full border-2 border-surface object-cover" data-alt="Avatar headshot of Chloe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-NNJmeFSjxGqPpRI-vQ-Pn4S-rhYo-owZ3Mgfb-AHggJ_jp9edPwUVUQU_jqFrXV4bFtGAefaJ_z_7CCtrH8IkhM5NtHQ3Zae9ka0J1gqq4NivdI67_xjVpSAQkdZgqqBG-hHn5wJkysJsUuE7-dJfly_KFOVg12Woymuiz3U44CM7abkoiwwyU9QUNgT4JwYIoHqmV14P6E9A_JbwH92V7zOc7xyU51Es-4k5X4T"/>
+</div>
+<div class="flex items-center gap-0.5">
+<span class="w-1 h-3 bg-secondary rounded-full animate-bounce"></span>
+<span class="w-1 h-4 bg-secondary rounded-full animate-bounce" style="animation-delay: 150ms;"></span>
+<span class="w-1 h-2 bg-secondary rounded-full animate-bounce" style="animation-delay: 300ms;"></span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Liam speaking...</span>
+</div>
+<!-- Join Action Button -->
+<button class="w-full mt-1 py-2 px-3 rounded-lg bg-gradient-to-r from-primary via-primary-container to-secondary text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-[0_0_16px_rgba(208,188,255,0.3)] hover:shadow-[0_0_24px_rgba(208,188,255,0.5)] active:scale-98 transition-all">
+<span class="material-symbols-outlined text-[18px]">door_open</span>
+<span>Join Party</span>
+</button>
+</div>
+</div>
+<!-- Party Card 2: Interstellar Premiere Re-run -->
+<div class="snap-start flex-shrink-0 w-80 rounded-xl bg-surface-container-high/90 overflow-hidden shadow-xl flex flex-col relative group">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Majestic cinema still from Christopher Nolan Interstellar showing the endurance spacecraft floating past the massive golden glowing gargantua black hole with light bending around accretion disk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLzO5jKWscEPPtb4WGQMyR_s_Y_V1peCnb4YJBKZbJhN6GJ69EHc6CCwFv6VkZi4yX3RZBaRxjNnk52h2t9Tkeamf_bLsv0bMxkbuvIF9DBEGdNTjK34SvkGHoFKONfkuqLy-VZdbkMOxpq3KIkrzOmY8T2AMnkBeFpm_LC5pOkiynghGElYXPAqJmQT3WOzFZtptVYjq4b3YXkvIl-X4dmgGaB6lKfP2OrbKbxgnq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high via-surface-container-high/40 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/90 text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> LIVE SYNC
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-tertiary-fixed font-label-sm text-label-sm flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[13px]">volume_up</span> IMAX Audio
+            </span>
+</div>
+<div class="absolute top-2.5 right-2.5 flex items-center gap-1 bg-surface-container-lowest/85 backdrop-blur-md px-2 py-0.5 rounded-full">
+<span class="font-label-sm text-label-sm text-tertiary-fixed font-bold">HOST: Devon</span>
+</div>
+<div class="absolute bottom-2 left-3 right-3 flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<span class="bg-surface-container-lowest/80 px-1.5 py-0.5 rounded font-mono text-tertiary">02:18:45</span>
+<span class="bg-surface-container-lowest/80 px-1.5 py-0.5 rounded text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-secondary">group</span> 4/10 Friends
+            </span>
+</div>
+</div>
+<div class="p-space-sm flex flex-col gap-space-xs flex-1 justify-between">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Interstellar (IMAX 4K)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">The docking scene coming up in 3 minutes! Don't miss it.</p>
+</div>
+<div class="flex items-center justify-between bg-surface-container-lowest/60 p-2 rounded-lg">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2">
+<img class="w-6 h-6 rounded-full border-2 border-surface object-cover" data-alt="Avatar portrait of Devon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_hXLvYfYfYeCh-TuwHKcJXE1dnhAlB_9BjkI9xIlsMoNuhphkN0MZgQreVhxTFuDtR5Zgwj4qGxoSelE-h4zox6Xxo5GekGGFKEpPcEIOzaP775COigB4C1H1fkdcz4YeVMdsv6zMCKsTor7_EVmROI1aVV-6YlSGkH1nvsQVMPdbTKSXPisWgOWSbzCVmGQK5jL9u_SYkhcDryA1fxVu8hbY3ELnpk146EBvCjmI"/>
+<img class="w-6 h-6 rounded-full border-2 border-surface object-cover" data-alt="Avatar portrait of Priya" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu_hXqajLil2LgPX3lny2FYoFAHw24w7fNXTpMMlYtgatFca3hUmEFrleLHDalCP3ChyaJK7LaMgC4jtijGcA3RhgpTbjCOSco014wnIjFdRMgvRM3GulaIAJExP7wr9nWw0PSYPYv0Pcvr_BDqzGzbcMkr5RjNcPI4jlubpHJSXhf43tf4rx8BXc9WphXFWWW2Aq_dIEhf52y2bF2QHRuMqqc5joc0de7X2coLBJk"/>
+</div>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">chat</span> 14 msgs/min
+              </span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Climax Soon</span>
+</div>
+<button class="w-full mt-1 py-2 px-3 rounded-lg bg-gradient-to-r from-primary via-primary-container to-secondary text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-[0_0_16px_rgba(208,188,255,0.3)] hover:shadow-[0_0_24px_rgba(208,188,255,0.5)] active:scale-98 transition-all">
+<span class="material-symbols-outlined text-[18px]">door_open</span>
+<span>Join Party</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Trending Movies Reel -->
+<div class="px-margin-mobile flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-tertiary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Trending For Parties</h3>
+</div>
+<a class="font-label-md text-label-md text-primary hover:underline flex items-center gap-0.5" data-path="movies-catalog" href="#">
+        Explore <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+<!-- 2-column compact grid of movie tiles -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Movie Tile 1: Blade Runner 2049 -->
+<div class="rounded-xl bg-surface-container overflow-hidden flex flex-col shadow-md group">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Official aesthetic movie poster of Blade Runner 2049 showing Officer K Ryan Gosling in heavy orange dust haze with towering holographic neon woman in the background, iconic cyberpunk cinema lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZm1DdJx6VxIlmypMUzYi04EklivoMNlBwDLLHRc-pAOhydESioX03NhKqxiIZyURDoWNp4t489f0pLIHywNJ7aT3zQ7Yp8TZMvhHEmFOFjubohSA52zH9ySuGtabwRznC99CCL5ZSmbGnVxpTBKdTcmyuCuNrCW8pfa8R2x9qqr1UWit-VPEzzEtYInTbz02YI-jrTWm8JRoWja0DZDsdHdH5eI1RBDHA9qkQl5ze"/>
+<!-- Match Score Badge -->
+<div class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-sm">
+<span class="font-label-sm text-label-sm text-secondary font-bold">98% MATCH</span>
+</div>
+<!-- Bookmark 1-tap button -->
+<button aria-label="Bookmark Blade Runner" class="bookmark-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+<!-- Quick Host Hover/Touch overlay -->
+<div class="absolute bottom-2 inset-x-2">
+<button class="w-full py-1.5 px-2 rounded-lg bg-primary/90 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-bold flex items-center justify-center gap-1 shadow-md hover:bg-primary transition-all">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">add</span> Host Party
+            </button>
+</div>
+</div>
+<div class="p-2.5 flex flex-col gap-1">
+<h5 class="font-label-lg text-label-lg text-on-surface font-bold truncate">Blade Runner 2049</h5>
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-on-surface-variant">
+<span class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-[12px] mr-0.5" style="font-variation-settings: 'FILL' 1;">star</span> 8.0
+            </span>
+<span>•</span>
+<span class="truncate">Sci-Fi • Noir</span>
+</div>
+<div class="flex flex-wrap gap-1 mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-variant/40 text-on-surface-variant font-label-sm text-label-sm">4K HDR</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-variant/40 text-on-surface-variant font-label-sm text-label-sm">Dolby Atmos</span>
+</div>
+</div>
+</div>
+<!-- Movie Tile 2: Past Lives -->
+<div class="rounded-xl bg-surface-container overflow-hidden flex flex-col shadow-md group">
+<div class="relative aspect-[2/3] w-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Intimate movie poster of Past Lives showing Greta Lee and Teo Yoo standing close on the New York subway looking gently at each other, melancholic warm cinematic natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQTkHFnFyAMQ-HVsk-BqnEgHVAg5AHM8c-Sa2lUwAN6l0W8TI9sFOtfmlganu9SKC6LOYqOt5Fmt45HjojbVELVu7-wibwPPrCslXCXSxZh9n3IRbVfgV0cRfMh8mt2LbD3A67hfVXtLHbfwLw8b9E6Klmic8BQx-IQAOfzkNQRmtdR2sF6Adnmwv037mlt0yT0RHQAKb5ELaiWN_PwrqRBzG_5XyDZajHwPIqRBBD"/>
+<!-- Match Score Badge -->
+<div class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-sm">
+<span class="font-label-sm text-label-sm text-secondary font-bold">96% MATCH</span>
+</div>
+<!-- Bookmark 1-tap button -->
+<button aria-label="Bookmark Past Lives" class="bookmark-btn absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+<!-- Quick Host Hover/Touch overlay -->
+<div class="absolute bottom-2 inset-x-2">
+<button class="w-full py-1.5 px-2 rounded-lg bg-primary/90 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-bold flex items-center justify-center gap-1 shadow-md hover:bg-primary transition-all">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">add</span> Host Party
+            </button>
+</div>
+</div>
+<div class="p-2.5 flex flex-col gap-1">
+<h5 class="font-label-lg text-label-lg text-on-surface font-bold truncate">Past Lives</h5>
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-on-surface-variant">
+<span class="flex items-center text-tertiary">
+<span class="material-symbols-outlined text-[12px] mr-0.5" style="font-variation-settings: 'FILL' 1;">star</span> 98% RT
+            </span>
+<span>•</span>
+<span class="truncate">Drama • Romance</span>
+</div>
+<div class="flex flex-wrap gap-1 mt-0.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-variant/40 text-on-surface-variant font-label-sm text-label-sm">Crowd Fav</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-variant/40 text-on-surface-variant font-label-sm text-label-sm">Crying Alert 😭</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Party Code Quick Sheet Modal (Hidden by default, triggered by JS) -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md hidden items-center justify-center p-gutter-mobile" id="codeModal">
+<div class="w-full max-w-sm rounded-xl bg-surface-container-high p-space-md shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Join by Code</h4>
+<button class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="closeCodeModalBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Paste the 6-character room key from your friend’s invite link.</p>
+<div class="flex gap-2 justify-center py-2">
+<input class="w-full text-center tracking-widest font-mono font-bold text-headline-sm uppercase px-4 py-3 rounded-lg bg-surface-container-lowest text-primary placeholder-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" maxlength="6" placeholder="CIN-892" type="text"/>
+</div>
+<button class="w-full py-3 rounded-lg bg-primary hover:bg-primary-fixed text-on-primary font-label-lg text-label-lg font-bold shadow-lg transition-all" id="submitPartyCodeBtn">
+        Sync into Theater
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interactions for CineTogether Dashboard
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Status Toggle interaction
+    const statusBtn = document.getElementById('statusToggleBtn');
+    const statuses = [
+      { text: 'Ready', ping: 'bg-secondary', dot: 'bg-secondary' },
+      { text: 'Watching', ping: 'bg-primary', dot: 'bg-primary' },
+      { text: 'Away', ping: 'bg-tertiary', dot: 'bg-tertiary' }
+    ];
+    let currentIdx = 0;
+
+    if (statusBtn) {
+      statusBtn.addEventListener('click', () => {
+        currentIdx = (currentIdx + 1) % statuses.length;
+        const cur = statuses[currentIdx];
+        const label = statusBtn.querySelector('span:nth-child(2)');
+        const pingEl = statusBtn.querySelector('span.animate-ping');
+        const dotEl = statusBtn.querySelector('span.relative.inline-flex');
+        
+        if (label) label.textContent = cur.text;
+        if (pingEl) pingEl.className = `animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${cur.ping}`;
+        if (dotEl) dotEl.className = `relative inline-flex rounded-full h-2.5 w-2.5 ${cur.dot}`;
+      });
+    }
+
+    // 2. Party Code Modal Trigger
+    const codeBtn = Array.from(document.querySelectorAll('button')).find(btn => btn.textContent.includes('Enter Party Code'));
+    const codeModal = document.getElementById('codeModal');
+    const closeModalBtn = document.getElementById('closeCodeModalBtn');
+    const submitCodeBtn = document.getElementById('submitPartyCodeBtn');
+
+    if (codeBtn && codeModal) {
+      codeBtn.addEventListener('click', () => {
+        codeModal.classList.remove('hidden');
+        codeModal.classList.add('flex');
+      });
+    }
+
+    if (closeModalBtn && codeModal) {
+      closeModalBtn.addEventListener('click', () => {
+        codeModal.classList.add('hidden');
+        codeModal.classList.remove('flex');
+      });
+    }
+
+    if (submitCodeBtn && codeModal) {
+      submitCodeBtn.addEventListener('click', () => {
+        submitCodeBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Connecting...';
+        setTimeout(() => {
+          submitCodeBtn.textContent = 'Synced!';
+          setTimeout(() => {
+            codeModal.classList.add('hidden');
+            codeModal.classList.remove('flex');
+            submitCodeBtn.textContent = 'Sync into Theater';
+          }, 600);
+        }, 800);
+      });
+    }
+
+    // 3. 1-Tap Bookmark toggles
+    const bookmarkBtns = document.querySelectorAll('.bookmark-btn');
+    bookmarkBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon) {
+          if (icon.textContent === 'bookmark_border') {
+            icon.textContent = 'bookmark';
+            icon.style.fontVariationSettings = "'FILL' 1";
+            btn.classList.add('text-secondary');
+          } else {
+            icon.textContent = 'bookmark_border';
+            icon.style.fontVariationSettings = "'FILL' 0";
+            btn.classList.remove('text-secondary');
+          }
+        }
+      });
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-8px_32px_rgba(10,14,24,0.7)]" data-active-classes="text-primary shadow-[0_0_16px_rgba(208,188,255,0.25)]"><div class="flex justify-around items-center h-16 px-space-xs max-w-md mx-auto"><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs w-16 h-12 rounded-xl transition-all duration-200 text-primary shadow-[0_0_16px_rgba(208,188,255,0.25)]" data-path="home-feed" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a class="relative flex flex-col items-center justify-center gap-space-xs w-16 h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="watch-parties" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">groups</span><span class="absolute -top-0.5 -right-1 w-2 h-2 bg-secondary rounded-full shadow-[0_0_8px_rgba(236,72,153,0.8)]"></span></div><span class="font-label-sm text-label-sm">Parties</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="movies-catalog" href="#"><span class="material-symbols-outlined text-[22px]">movie</span><span class="font-label-sm text-label-sm">Movies</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="theme-studio-profile" href="#"><span class="material-symbols-outlined text-[22px]">palette</span><span class="font-label-sm text-label-sm">Studio</span></a></div></nav></body></html>

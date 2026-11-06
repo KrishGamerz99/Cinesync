@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0f131d;color:#dfe2f0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#958ea0", "tertiary-fixed": "#ffddb8", "inverse-primary": "#6d3bd7", "tertiary-container": "#ca8100", "surface-container": "#1b1f2a", "surface-container-low": "#171b26", "on-secondary-container": "#ffbad3", "inverse-on-surface": "#2c303b", "primary-fixed-dim": "#d0bcff", "surface-dim": "#0f131d", "on-tertiary-fixed": "#2a1700", "on-surface": "#dfe2f0", "surface-variant": "#313540", "primary": "#d0bcff", "on-tertiary-fixed-variant": "#653e00", "secondary-fixed-dim": "#ffb0cd", "surface-tint": "#d0bcff", "on-secondary-fixed": "#3e0022", "on-tertiary": "#472a00", "error-container": "#93000a", "error": "#ffb4ab", "surface": "#0f131d", "inverse-surface": "#dfe2f0", "primary-container": "#a078ff", "surface-container-highest": "#313540", "tertiary-fixed-dim": "#ffb95f", "secondary-container": "#aa0266", "on-secondary-fixed-variant": "#8c0053", "surface-container-lowest": "#0a0e18", "on-secondary": "#640039", "secondary-fixed": "#ffd9e4", "on-primary": "#3c0091", "on-primary-container": "#340080", "primary-fixed": "#e9ddff", "on-error-container": "#ffdad6", "on-tertiary-container": "#3e2400", "on-background": "#dfe2f0", "on-primary-fixed-variant": "#5516be", "surface-bright": "#353944", "secondary": "#ffb0cd", "on-error": "#690005", "surface-container-high": "#262a35", "outline-variant": "#494454", "on-primary-fixed": "#23005c", "tertiary": "#ffb95f", "on-surface-variant": "#cbc3d7", "background": "#0f131d" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-sm": "0.5rem", "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-lg": "1.5rem", "margin": "2rem", "space-xl": "2.5rem", "margin-mobile": "1rem" }, "fontFamily": { "label-lg": ["Inter"], "label-sm": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Space Grotesk"], "body-sm": ["Inter"], "body-lg": ["Inter"], "body-md": ["Inter"], "headline-md": ["Space Grotesk"], "headline-xl": ["Space Grotesk"], "headline-xl-mobile": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"] }, "fontSize": { "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="CineTogether Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF1iTS5jn6FRDDpjZ0bVZo_gQzqRxf4x90H_TyJEMv_QqFcBgk9q22dRnYd8vYt7wf-KFxtTohkREp8pchQGTNNhy8Pf2CGbzPw-Nj4ZuiB6bTdOGFOEb8ooPdU7_f26m59R3wlqqZcktw7LWmIN8EhWbKhpmyoSID-SNh4Vbj0K-XuiLCfjUjmNc71iA8UQrOkIQlJQ85ibtSB7jzP3g2ZcZ_8fgL4mkjWJ6Uhj6S"/><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight truncate hidden xs:inline">CineTogether</span><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight truncate">Theme Studio Profile</span></div><div class="flex items-center gap-space-xs"><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-secondary-container/20 shadow-[0_0_12px_rgba(236,72,153,0.35)]"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider hidden sm:inline">LIVE</span></div><a class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" data-path="catalog-search" href="#"><span class="material-symbols-outlined text-[22px]">search</span></a><a class="w-11 h-11 flex items-center justify-center rounded-full focus:outline-none" data-path="theme-studio-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_10px_rgba(208,188,255,0.4)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB_GMrZhWQiIXEtPUiBOq2ZzLZKq4j31nd4r4DwHQkbGWciCBJ5vEgLMy1CCTPwrv40s9k-636xtfJg95YwrCzqimDWyUcjDJNMxj-hGX56UQbO3UGBm6RpoG2aInhGrsW1SF5KOrsz8LUEs1T3ujBN-LxfhuHaj87wZpOK-TOi34l5ynLZE7CzY9Zuy715TlClQelg53NNYgUrrp1ojZ1RRt__a0DUv9h7NZ_mXIM"/></a></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-gutter-mobile space-y-space-lg">
+<!-- Header Contextual Block (No duplicate title of App Shell) -->
+<div class="flex flex-col pt-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">auto_fix_high</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-surface">Theme Studio</span>
+</div>
+<span class="inline-flex items-center px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+        v2.4 Live Sync
+      </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-snug">
+      Personalize your CineTogether theater experience. Changes save directly to your profile and do not disrupt friends.
+    </p>
+</div>
+<!-- Live Interactive Mini-Preview Device Stage -->
+<div class="relative w-full rounded-xl bg-surface-container-lowest p-space-sm overflow-hidden shadow-2xl">
+<!-- Ambient Reactive Back-Glow Behind Device -->
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 w-48 h-32 rounded-full bg-primary/25 blur-3xl transition-all duration-500 pointer-events-none" id="preview-ambient-glow"></div>
+<div class="flex items-center justify-between px-space-xs pb-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">smartphone</span>
+<span>Realtime Theater Preview</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold" id="active-theme-label">Purple Galaxy</span>
+</div>
+</div>
+<!-- Scaled Down Cinema Player + Live Social Mockup -->
+<div class="relative w-full rounded-lg bg-surface-container-low p-space-sm transition-all duration-300 space-y-space-sm shadow-inner" id="preview-canvas">
+<!-- Video Mini Viewport -->
+<div class="relative w-full h-32 rounded-lg overflow-hidden bg-surface-container-highest shadow-md">
+<img class="w-full h-full object-cover" data-alt="Cinematic sci-fi scene of glowing neon violet spaceship entering an obsidian dimensional rift with starry atmospheric particle dust and cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy_MMMokg9mZkWCJfwsQI6xMVSTlMlhDSRizGkzmUCCNUfrmHNdOlVCnfc9pI-_rFQIg5RlzmgOkvZorllUSKnwGiXpEEqueGBwi9VyBzjOaqBNliU2F_AGbSpH4S8VDLHlSAEF4Jm9foQcKF7sCJ0G30zQs79G_uHICAbcH6E-HeIdGmZHsLW6s595rons1VbducyzO1TpGckkWpKBNLZ0f1A5axWHT0Daveg2dJ2"/>
+<!-- Live Sync Pill & Host Badge on Video -->
+<div class="absolute top-2 left-2 flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 01:24:18
+          </span>
+<span class="px-space-xs py-0.5 rounded-full bg-tertiary-container/30 text-tertiary-fixed font-label-sm text-label-sm backdrop-blur-md">
+            HOST
+          </span>
+</div>
+<!-- Scrubbing friend avatar heads -->
+<div class="absolute bottom-2 inset-x-2 flex items-center gap-space-xs">
+<div class="h-1 flex-1 bg-surface-variant/70 rounded-full relative">
+<div class="h-full w-2/3 bg-primary rounded-full transition-colors duration-300" id="preview-progress-bar"></div>
+<!-- Friend seeker indicator -->
+<div class="absolute top-1/2 -translate-y-1/2 left-2/3 -translate-x-1/2 w-4 h-4 rounded-full bg-secondary-container p-0.5 shadow-lg">
+<img class="w-full h-full rounded-full object-cover" data-alt="Profile avatar close-up of a smiling young woman with neon backlighting in a modern cinema room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPVYxys4wPIwWbJExS6MJcvxt7u6tX5YgZZ3L-LzCn5wd4-Be43nSw9PIUNy4Ac5ibuu_PL4H5Ms86UlYoJrEhMrPuOu5HJ8lELxr9wL8HngH1H4F9pyqrQn2tQDrjr-rWHhznj8BKt6cPF_nLXcR7jbk1NpOAm16eTzy-pWMuWnBrAgY5Xpq6i7T-Y9RZYZNZ3RzEutV9CGJ0MfK8v5zMPY7-Jp3-UuNHCvzo4uLR"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Preview Components Mosaic (Social Strip + Chat Bubble) -->
+<div class="grid grid-cols-5 gap-space-xs pt-space-xs items-center">
+<!-- Speaking Participant Badge -->
+<div class="col-span-2 flex items-center gap-space-xs p-1 rounded-lg bg-surface-container shadow-sm">
+<div class="relative w-7 h-7 rounded-full bg-surface-variant p-0.5 shadow-[0_0_8px_rgba(236,72,153,0.7)] transition-all duration-300" id="preview-speaking-ring">
+<img class="w-full h-full rounded-full object-cover" data-alt="Portrait avatar of a gamer boy with headphones illuminated by soft neon cyber rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxI4U1GtaMIpUzeLEmXW1ToHTo4SqnwTlNhCMDut8BDQ91ZqUdp7kL8Sk6smdkdPQTY6v6kcNRQP7wLbjqLF18e-b6sD26YhjmYkHCYbHSTA1oA9NdLFmjFTiXZSk40GW591Q9KcFTOSlK-ih56LaTo6V7f5gGgjK9J_KZncXX2HopoYQxl7PX1HkX2s3xbv6_bowwObILO4UsAbZo_4FRX3jgAytbr-mrWOz4foH0"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-secondary rounded-full flex items-center justify-center text-[7px] text-on-secondary font-bold">🎙</span>
+</div>
+<div class="min-w-0 flex-1">
+<p class="font-label-sm text-label-sm text-on-surface truncate">Maya</p>
+<p class="font-label-sm text-[9px] text-secondary truncate leading-none">Speaking</p>
+</div>
+</div>
+<!-- Dynamic Mini Chat Bubble -->
+<div class="col-span-3 rounded-lg bg-surface-container px-space-xs py-1 flex items-center justify-between shadow-sm min-w-0">
+<div class="min-w-0 pr-1">
+<p class="font-label-sm text-[9px] text-on-surface-variant truncate">Maya: <span class="text-on-surface">Wait for the twist! 🍿</span></p>
+</div>
+<span class="px-1.5 py-0.5 rounded-full bg-primary-container/25 text-primary font-label-sm text-[10px] shrink-0 font-bold transition-colors" id="preview-reaction-chip">
+            🔥 4
+          </span>
+</div>
+</div>
+<!-- Mini glowing button preview -->
+<div class="pt-1 flex items-center justify-between gap-space-xs">
+<button class="flex-1 py-1.5 px-space-sm rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-md transition-all duration-300 text-center flex items-center justify-center gap-1" id="preview-button-main" type="button">
+<span class="material-symbols-outlined text-[14px]">sync</span>
+          Sync Friends
+        </button>
+<button class="py-1.5 px-space-sm rounded-lg bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold transition-all duration-300 flex items-center gap-1" id="preview-button-secondary" type="button">
+<span class="material-symbols-outlined text-[14px]">celebration</span>
+          Cheers
+        </button>
+</div>
+</div>
+</div>
+<!-- Preset Themes Palette Cards -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">palette</span>
+        Curated Palettes
+      </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tap to test</span>
+</div>
+<!-- Horizontal Scrollable Cards with Active Glowing Border emulation -->
+<div class="flex gap-space-sm overflow-x-auto pb-space-xs scrollbar-none snap-x">
+<!-- 1. Purple Galaxy (Active) -->
+<div class="theme-card relative shrink-0 w-36 rounded-xl bg-surface-container-high p-space-sm snap-start cursor-pointer transition-all duration-200 shadow-lg ring-2 ring-primary" data-name="Purple Galaxy" data-primary="#D0BCFF" data-primary-glow="rgba(208, 188, 255, 0.45)" data-secondary="#FFB0CD" data-theme="galaxy">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Purple Galaxy</span>
+<span class="material-symbols-outlined text-primary text-[18px] theme-check">check_circle</span>
+</div>
+<div class="flex items-center gap-1.5 mb-space-xs">
+<div class="w-6 h-6 rounded-full bg-primary shadow-sm"></div>
+<div class="w-6 h-6 rounded-full bg-secondary shadow-sm"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Cosmic Nocturne</span>
+</div>
+<!-- 2. Midnight Blue -->
+<div class="theme-card relative shrink-0 w-36 rounded-xl bg-surface-container p-space-sm snap-start cursor-pointer transition-all duration-200 hover:bg-surface-container-high" data-name="Midnight Blue" data-primary="#9ecaff" data-primary-glow="rgba(158, 202, 255, 0.45)" data-secondary="#80d5ff" data-theme="midnight">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Midnight Blue</span>
+<span class="material-symbols-outlined text-outline text-[18px] theme-check opacity-0">check_circle</span>
+</div>
+<div class="flex items-center gap-1.5 mb-space-xs">
+<div class="w-6 h-6 rounded-full bg-[#9ecaff] shadow-sm"></div>
+<div class="w-6 h-6 rounded-full bg-[#80d5ff] shadow-sm"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Sapphire &amp; Cyan</span>
+</div>
+<!-- 3. Neon Cyber -->
+<div class="theme-card relative shrink-0 w-36 rounded-xl bg-surface-container p-space-sm snap-start cursor-pointer transition-all duration-200 hover:bg-surface-container-high" data-name="Neon Cyber" data-primary="#69db7c" data-primary-glow="rgba(105, 219, 124, 0.45)" data-secondary="#38d9a9" data-theme="cyber">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Neon Cyber</span>
+<span class="material-symbols-outlined text-outline text-[18px] theme-check opacity-0">check_circle</span>
+</div>
+<div class="flex items-center gap-1.5 mb-space-xs">
+<div class="w-6 h-6 rounded-full bg-[#69db7c] shadow-sm"></div>
+<div class="w-6 h-6 rounded-full bg-[#38d9a9] shadow-sm"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Emerald &amp; Matrix</span>
+</div>
+<!-- 4. Sunset Orange -->
+<div class="theme-card relative shrink-0 w-36 rounded-xl bg-surface-container p-space-sm snap-start cursor-pointer transition-all duration-200 hover:bg-surface-container-high" data-name="Sunset Orange" data-primary="#ffb95f" data-primary-glow="rgba(255, 185, 95, 0.45)" data-secondary="#ff8787" data-theme="sunset">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Sunset Orange</span>
+<span class="material-symbols-outlined text-outline text-[18px] theme-check opacity-0">check_circle</span>
+</div>
+<div class="flex items-center gap-1.5 mb-space-xs">
+<div class="w-6 h-6 rounded-full bg-tertiary shadow-sm"></div>
+<div class="w-6 h-6 rounded-full bg-[#ff8787] shadow-sm"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Amber &amp; Coral</span>
+</div>
+<!-- 5. Rose Velvet -->
+<div class="theme-card relative shrink-0 w-36 rounded-xl bg-surface-container p-space-sm snap-start cursor-pointer transition-all duration-200 hover:bg-surface-container-high" data-name="Rose Velvet" data-primary="#f06595" data-primary-glow="rgba(240, 101, 149, 0.45)" data-secondary="#ffa8a8" data-theme="rose">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Rose Velvet</span>
+<span class="material-symbols-outlined text-outline text-[18px] theme-check opacity-0">check_circle</span>
+</div>
+<div class="flex items-center gap-1.5 mb-space-xs">
+<div class="w-6 h-6 rounded-full bg-[#f06595] shadow-sm"></div>
+<div class="w-6 h-6 rounded-full bg-[#ffa8a8] shadow-sm"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Ruby Glow</span>
+</div>
+</div>
+</div>
+<!-- Custom Color Engine Section -->
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">tune</span>
+        Custom Color Engine
+      </h2>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Pro Calibration</span>
+</div>
+<!-- Mode Selector Pills -->
+<div class="rounded-xl bg-surface-container p-1 grid grid-cols-4 gap-1 shadow-sm">
+<button class="mode-pill py-2 px-1 rounded-lg text-center font-label-sm text-label-sm bg-primary text-on-primary font-semibold shadow-sm transition-all" data-mode="dark" type="button">
+        Dark
+      </button>
+<button class="mode-pill py-2 px-1 rounded-lg text-center font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" data-mode="oled" type="button">
+        OLED Pure
+      </button>
+<button class="mode-pill py-2 px-1 rounded-lg text-center font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" data-mode="ambient" type="button">
+        Ambient
+      </button>
+<button class="mode-pill py-2 px-1 rounded-lg text-center font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" data-mode="light" type="button">
+        Studio Day
+      </button>
+</div>
+<!-- Fine Tuning Color Cards -->
+<div class="rounded-xl bg-surface-container p-space-md space-y-space-md shadow-md">
+<!-- Primary Accent Color Tuning -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-medium flex items-center gap-1">
+<span class="w-3 h-3 rounded-full bg-primary inline-block"></span>
+            Primary Accent Color
+          </label>
+<div class="flex items-center gap-1 bg-surface-container-highest px-space-xs py-1 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">HEX</span>
+<input class="bg-transparent w-16 text-right font-label-sm text-label-sm text-primary font-bold focus:outline-none uppercase" id="primary-hex-input" type="text" value="#D0BCFF"/>
+</div>
+</div>
+<!-- Interactive Hue Slider Track -->
+<div class="relative py-2 flex items-center">
+<input class="w-full h-2 rounded-full appearance-none cursor-pointer bg-gradient-to-r from-red-500 via-amber-400 via-emerald-400 via-cyan-400 via-blue-500 via-fuchsia-500 to-red-500 focus:outline-none" id="primary-slider" max="360" min="0" type="range" value="260"/>
+</div>
+<p class="font-label-sm text-[11px] text-on-surface-variant">Drives playback markers, active navigation icons, and stream host halos.</p>
+</div>
+<!-- Secondary Glow Accent Tuning -->
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-medium flex items-center gap-1">
+<span class="w-3 h-3 rounded-full bg-secondary inline-block"></span>
+            Secondary Social Glow
+          </label>
+<div class="flex items-center gap-1 bg-surface-container-highest px-space-xs py-1 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">HEX</span>
+<input class="bg-transparent w-16 text-right font-label-sm text-label-sm text-secondary font-bold focus:outline-none uppercase" id="secondary-hex-input" type="text" value="#FFB0CD"/>
+</div>
+</div>
+<div class="relative py-2 flex items-center">
+<input class="w-full h-2 rounded-full appearance-none cursor-pointer bg-gradient-to-r from-pink-500 via-purple-500 via-blue-500 via-emerald-400 via-amber-400 to-pink-500 focus:outline-none" id="secondary-slider" max="360" min="0" type="range" value="330"/>
+</div>
+<p class="font-label-sm text-[11px] text-on-surface-variant">Applied to live speaking micro-wave meters, reaction bursts, and cheer badges.</p>
+</div>
+<!-- Surface Contrast Selector Segmented Control -->
+<div class="space-y-space-xs pt-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-medium">Theater Surface Depth</label>
+<div class="grid grid-cols-3 gap-space-xs pt-1">
+<button class="contrast-btn flex flex-col items-center justify-center p-space-xs rounded-xl bg-surface-container-high text-primary ring-1 ring-primary transition-all" data-contrast="space" type="button">
+<span class="font-label-sm text-label-sm font-bold">Deep Space</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant mt-0.5">Subtle Blur</span>
+</button>
+<button class="contrast-btn flex flex-col items-center justify-center p-space-xs rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" data-contrast="glass" type="button">
+<span class="font-label-sm text-label-sm font-bold">Soft Glass</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant mt-0.5">Frosted Glow</span>
+</button>
+<button class="contrast-btn flex flex-col items-center justify-center p-space-xs rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-all" data-contrast="pitch" type="button">
+<span class="font-label-sm text-label-sm font-bold">Pitch Black</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant mt-0.5">Maximum Film</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Audio & Social Experience Preferences -->
+<div class="space-y-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">equalizer</span>
+      Audio &amp; Social Preferences
+    </h2>
+<div class="rounded-xl bg-surface-container p-space-md space-y-space-md shadow-md">
+<!-- Video Grid Placement Toggle -->
+<div class="flex items-center justify-between">
+<div class="space-y-0.5 pr-space-sm min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Friend Avatar Grid</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Show friends on top overlay or side docked strip</p>
+</div>
+<div class="flex rounded-lg bg-surface-container-highest p-0.5 shrink-0">
+<button class="avatar-pos-btn px-2.5 py-1 rounded-md bg-primary text-on-primary font-label-sm text-label-sm font-semibold transition-all" type="button">Top</button>
+<button class="avatar-pos-btn px-2.5 py-1 rounded-md text-on-surface-variant font-label-sm text-label-sm font-medium hover:text-on-surface transition-all" type="button">Side Rail</button>
+</div>
+</div>
+<!-- Spatial Voice Chat Volume Slider -->
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">spatial_audio</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Spatial Voice Balance</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">75% Ambient</span>
+</div>
+<input class="w-full h-1.5 rounded-full appearance-none cursor-pointer bg-surface-container-highest accent-primary" max="100" min="0" type="range" value="75"/>
+<div class="flex justify-between font-label-sm text-[10px] text-on-surface-variant">
+<span>Cinema Only</span>
+<span>Balanced</span>
+<span>Voices Boosted</span>
+</div>
+</div>
+<!-- Reaction Animation Intensity -->
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">flare</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Live Reaction Intensity</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Dynamic Bursts</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="py-1.5 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-medium hover:text-on-surface transition-all" type="button">Subtle</button>
+<button class="py-1.5 rounded-lg bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shadow-sm transition-all" type="button">Dynamic</button>
+<button class="py-1.5 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-medium hover:text-on-surface transition-all" type="button">Explosive 🚀</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Profile Identity Card Sample Preview -->
+<div class="rounded-xl bg-surface-container p-space-md flex items-center justify-between shadow-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-12 h-12 rounded-full overflow-hidden shrink-0 shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Close up profile picture of a stylish cinema enthusiast wearing glasses reflecting neon purple ambient theater light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFIEBCererOMkDd3WOn8vbeb7T4mvonXfTrWy0lvEsQMQdNVA6ErYjBLzkigse9PwTwkFNRmKCYKR6iU1PYQ5mnDBZdW1OTlD8pp6tlstcadfez2reu8GM8hCH1ulBX8-L5a07iHqHvT9HJWnDL473t2nZFL88NHk-SadDVPoz8uJIrvn_nFV782H2_pQIGOUmUC7S6coe2_cCrLsJ_OyyKJXuWdNTxrjSYt46RM0L"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-secondary ring-2 ring-surface"></span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<p class="font-label-lg text-label-lg text-on-surface font-bold truncate">Nova Cinema</p>
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Theme synced across 12 watch rooms</p>
+</div>
+</div>
+<button class="shrink-0 p-2 rounded-xl bg-surface-container-high text-primary hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</button>
+</div>
+<!-- Sticky Bottom CTA Action Bar for Save with Delight Feedback -->
+<div class="sticky bottom-4 z-40 w-full pt-space-xs">
+<div class="relative w-full rounded-2xl bg-surface-container-high/90 backdrop-blur-xl p-space-xs shadow-2xl flex items-center gap-space-sm">
+<!-- Primary Save Button -->
+<button class="flex-1 py-3 px-space-md rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm font-bold shadow-[0_0_20px_rgba(208,188,255,0.35)] active:scale-95 transition-all duration-200 flex items-center justify-center gap-space-xs" id="save-theme-btn" type="button">
+<span class="material-symbols-outlined text-[22px]">palette</span>
+<span>Save &amp; Apply Theme</span>
+</button>
+<!-- Instant Revert/Reset Button -->
+<button class="p-3 rounded-xl bg-surface-container-highest text-on-surface-variant hover:text-on-surface hover:bg-surface-bright transition-colors" id="reset-theme-btn" title="Reset to Defaults" type="button">
+<span class="material-symbols-outlined text-[22px]">restart_alt</span>
+</button>
+</div>
+<!-- Success Feedback Floating Toast Overlay (Hidden by Default) -->
+<div class="pointer-events-none opacity-0 translate-y-2 absolute -top-12 inset-x-4 flex items-center justify-center transition-all duration-300" id="save-success-toast">
+<div class="px-space-md py-1.5 rounded-full bg-secondary-container text-on-secondary-container shadow-2xl flex items-center gap-space-xs font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Theme saved to Nova Cinema profile! 🎉</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initThemeStudio() {
+    const themeCards = document.querySelectorAll('.theme-card');
+    const activeLabel = document.getElementById('active-theme-label');
+    const previewAmbient = document.getElementById('preview-ambient-glow');
+    const previewBtnMain = document.getElementById('preview-button-main');
+    const previewProgressBar = document.getElementById('preview-progress-bar');
+    const previewSpeakingRing = document.getElementById('preview-speaking-ring');
+    const primaryHex = document.getElementById('primary-hex-input');
+    const secondaryHex = document.getElementById('secondary-hex-input');
+    const primarySlider = document.getElementById('primary-slider');
+    const secondarySlider = document.getElementById('secondary-slider');
+    const saveBtn = document.getElementById('save-theme-btn');
+    const saveToast = document.getElementById('save-success-toast');
+
+    // Preset selection logic
+    themeCards.forEach(card => {
+      card.addEventListener('click', () => {
+        themeCards.forEach(c => {
+          c.classList.remove('ring-2', 'ring-primary', 'bg-surface-container-high');
+          c.classList.add('bg-surface-container');
+          const check = c.querySelector('.theme-check');
+          if (check) check.classList.add('opacity-0');
+        });
+
+        card.classList.add('ring-2', 'ring-primary', 'bg-surface-container-high');
+        card.classList.remove('bg-surface-container');
+        const activeCheck = card.querySelector('.theme-check');
+        if (activeCheck) activeCheck.classList.remove('opacity-0');
+
+        const name = card.dataset.name;
+        const pColor = card.dataset.primary;
+        const sColor = card.dataset.secondary;
+        const glow = card.dataset.primaryGlow;
+
+        if (activeLabel) activeLabel.textContent = name;
+        if (primaryHex) primaryHex.value = pColor.toUpperCase();
+        if (secondaryHex) secondaryHex.value = sColor.toUpperCase();
+
+        if (previewAmbient) previewAmbient.style.backgroundColor = glow;
+        if (previewBtnMain) previewBtnMain.style.backgroundColor = pColor;
+        if (previewProgressBar) previewProgressBar.style.backgroundColor = pColor;
+        if (previewSpeakingRing) previewSpeakingRing.style.boxShadow = `0 0 10px ${sColor}`;
+      });
+    });
+
+    // Slider reactive update
+    function hslToHex(h, s, l) {
+      l /= 100;
+      const a = s * Math.min(l, 1 - l) / 100;
+      const f = n => {
+        const k = (n + h / 30) % 12;
+        const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+        return Math.round(255 * color).toString(16).padStart(2, '0');
+      };
+      return `#${f(0)}${f(8)}${f(4)}`.toUpperCase();
+    }
+
+    if (primarySlider) {
+      primarySlider.addEventListener('input', (e) => {
+        const hex = hslToHex(Number(e.target.value), 85, 75);
+        if (primaryHex) primaryHex.value = hex;
+        if (previewBtnMain) previewBtnMain.style.backgroundColor = hex;
+        if (previewProgressBar) previewProgressBar.style.backgroundColor = hex;
+        if (previewAmbient) previewAmbient.style.backgroundColor = hex + '55';
+        if (activeLabel) activeLabel.textContent = 'Custom Spectrum';
+      });
+    }
+
+    if (secondarySlider) {
+      secondarySlider.addEventListener('input', (e) => {
+        const hex = hslToHex(Number(e.target.value), 90, 70);
+        if (secondaryHex) secondaryHex.value = hex;
+        if (previewSpeakingRing) previewSpeakingRing.style.boxShadow = `0 0 10px ${hex}`;
+      });
+    }
+
+    // Mode Toggle Pills
+    const modePills = document.querySelectorAll('.mode-pill');
+    modePills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        modePills.forEach(p => {
+          p.classList.remove('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+          p.classList.add('text-on-surface-variant');
+        });
+        pill.classList.add('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+        pill.classList.remove('text-on-surface-variant');
+      });
+    });
+
+    // Save with Delight Micro-animation
+    if (saveBtn && saveToast) {
+      saveBtn.addEventListener('click', () => {
+        saveToast.classList.remove('opacity-0', 'translate-y-2');
+        saveToast.classList.add('opacity-100', 'translate-y-0');
+        
+        // Tactile particle glow pulse
+        saveBtn.classList.add('scale-95');
+        setTimeout(() => saveBtn.classList.remove('scale-95'), 150);
+
+        setTimeout(() => {
+          saveToast.classList.add('opacity-0', 'translate-y-2');
+          saveToast.classList.remove('opacity-100', 'translate-y-0');
+        }, 2600);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-8px_32px_rgba(10,14,24,0.7)]" data-active-classes="text-primary shadow-[0_0_16px_rgba(208,188,255,0.25)]"><div class="flex justify-around items-center h-16 px-space-xs max-w-md mx-auto"><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="home-feed" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a class="relative flex flex-col items-center justify-center gap-space-xs w-16 h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="watch-parties" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">groups</span><span class="absolute -top-0.5 -right-1 w-2 h-2 bg-secondary rounded-full shadow-[0_0_8px_rgba(236,72,153,0.8)]"></span></div><span class="font-label-sm text-label-sm">Parties</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-12 rounded-xl text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="movies-catalog" href="#"><span class="material-symbols-outlined text-[22px]">movie</span><span class="font-label-sm text-label-sm">Movies</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs w-16 h-12 rounded-xl transition-all duration-200 text-primary shadow-[0_0_16px_rgba(208,188,255,0.25)]" data-path="theme-studio-profile" href="#"><span class="material-symbols-outlined text-[22px]">palette</span><span class="font-label-sm text-label-sm">Studio</span></a></div></nav></body></html>

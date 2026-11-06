@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0f131d;color:#dfe2f0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#958ea0", "tertiary-fixed": "#ffddb8", "inverse-primary": "#6d3bd7", "tertiary-container": "#ca8100", "surface-container": "#1b1f2a", "surface-container-low": "#171b26", "on-secondary-container": "#ffbad3", "inverse-on-surface": "#2c303b", "primary-fixed-dim": "#d0bcff", "surface-dim": "#0f131d", "on-tertiary-fixed": "#2a1700", "on-surface": "#dfe2f0", "surface-variant": "#313540", "primary": "#d0bcff", "on-tertiary-fixed-variant": "#653e00", "secondary-fixed-dim": "#ffb0cd", "surface-tint": "#d0bcff", "on-secondary-fixed": "#3e0022", "on-tertiary": "#472a00", "error-container": "#93000a", "error": "#ffb4ab", "surface": "#0f131d", "inverse-surface": "#dfe2f0", "primary-container": "#a078ff", "surface-container-highest": "#313540", "tertiary-fixed-dim": "#ffb95f", "secondary-container": "#aa0266", "on-secondary-fixed-variant": "#8c0053", "surface-container-lowest": "#0a0e18", "on-secondary": "#640039", "secondary-fixed": "#ffd9e4", "on-primary": "#3c0091", "on-primary-container": "#340080", "primary-fixed": "#e9ddff", "on-error-container": "#ffdad6", "on-tertiary-container": "#3e2400", "on-background": "#dfe2f0", "on-primary-fixed-variant": "#5516be", "surface-bright": "#353944", "secondary": "#ffb0cd", "on-error": "#690005", "surface-container-high": "#262a35", "outline-variant": "#494454", "on-primary-fixed": "#23005c", "tertiary": "#ffb95f", "on-surface-variant": "#cbc3d7", "background": "#0f131d" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-sm": "0.5rem", "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-lg": "1.5rem", "margin": "2rem", "space-xl": "2.5rem", "margin-mobile": "1rem" }, "fontFamily": { "label-lg": ["Inter"], "label-sm": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Space Grotesk"], "body-sm": ["Inter"], "body-lg": ["Inter"], "body-md": ["Inter"], "headline-md": ["Space Grotesk"], "headline-xl": ["Space Grotesk"], "headline-xl-mobile": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"] }, "fontSize": { "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.5)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><img alt="CineTogether Logo" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF1iTS5jn6FRDDpjZ0bVZo_gQzqRxf4x90H_TyJEMv_QqFcBgk9q22dRnYd8vYt7wf-KFxtTohkREp8pchQGTNNhy8Pf2CGbzPw-Nj4ZuiB6bTdOGFOEb8ooPdU7_f26m59R3wlqqZcktw7LWmIN8EhWbKhpmyoSID-SNh4Vbj0K-XuiLCfjUjmNc71iA8UQrOkIQlJQ85ibtSB7jzP3g2ZcZ_8fgL4mkjWJ6Uhj6S"/></div><h1 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight truncate flex-1 text-center px-space-xs">Movie Details</h1><div class="flex items-center justify-end min-w-[44px]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_10px_rgba(208,188,255,0.4)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB_GMrZhWQiIXEtPUiBOq2ZzLZKq4j31nd4r4DwHQkbGWciCBJ5vEgLMy1CCTPwrv40s9k-636xtfJg95YwrCzqimDWyUcjDJNMxj-hGX56UQbO3UGBm6RpoG2aInhGrsW1SF5KOrsz8LUEs1T3ujBN-LxfhuHaj87wZpOK-TOi34l5ynLZE7CzY9Zuy715TlClQelg53NNYgUrrp1ojZ1RRt__a0DUv9h7NZ_mXIM"/></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- Cinematic Hero Backdrop Container -->
+<div class="relative w-full aspect-[16/10] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="Cinematic still from Blade Runner 2049, atmospheric cyberpunk cityscape drenched in vivid amber fog and deep neon violet rain. Giant holographic advertising silhouettes tower in the background over wet reflective pavement, capturing an ultra-high production sci-fi aesthetic with moody moody volumetric lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD63AaJ1tcrwkTqN9_4HYix3MhPRSqurheBTN8Y_G5xgmdzVfxmDb6PWbYbqNw4uZ30FCUWhDu3S2-aNw4gJEPg2RgJj0H6TUpnzsY0kTXlA1I-Z_bsp6__aEZ0I6ilCj6L8BjgXj9oliIguvGciSD0vX2xifkL9VQTvEpXbBkOpOcdmYGFMkecinfetRfg_AxZqmL5uay7A5Dd_K_04-kEYPZANcsK52tlF7LsVRSy')">
+</div>
+<!-- Seamless Gradient Scrim to Dark Canvas -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/80 via-transparent to-surface/40"></div>
+<!-- Floating Quick Trailer Trigger overlay on Hero -->
+<button class="absolute inset-0 m-auto w-14 h-14 rounded-full bg-primary/20 backdrop-blur-md flex items-center justify-center text-primary shadow-[0_0_24px_rgba(208,188,255,0.45)] hover:scale-110 active:scale-95 transition-all" id="heroPlayBtn">
+<span class="material-symbols-outlined text-[32px] ml-0.5" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<!-- Top floating live counter badge -->
+<div class="absolute top-space-sm right-gutter-mobile flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md shadow-md">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse shadow-[0_0_8px_rgba(255,176,205,0.8)]"></span>
+<span class="font-label-sm text-label-sm text-secondary-fixed">1.4K WATCHING NOW</span>
+</div>
+</div>
+<!-- Content Section -->
+<div class="flex flex-col px-gutter-mobile -mt-10 relative z-10 space-y-space-lg pb-space-xl">
+<!-- Movie Metadata Bento Card -->
+<div class="bg-surface-container-low/90 backdrop-blur-xl rounded-xl p-space-md shadow-xl flex flex-col space-y-space-md">
+<!-- Badges & Ratings Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-primary-container/30 text-primary font-label-sm text-label-sm tracking-wide">4K ULTRA HD</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm tracking-wider">DOLBY ATMOS</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">2h 44m</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">2017</span>
+</div>
+<!-- Rating Chips -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">8.0</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-error text-[14px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-label-sm text-label-sm text-error font-bold">88%</span>
+</div>
+</div>
+</div>
+<!-- Main Title Block -->
+<div class="space-y-space-xs">
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile font-bold tracking-tight text-on-surface drop-shadow-sm">
+          Blade Runner 2049
+        </h2>
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary">Sci-Fi</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">Mystery</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">Action</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 text-outline">R • 163 min</span>
+</div>
+</div>
+<!-- Action Buttons Row -->
+<div class="flex flex-col space-y-space-xs pt-space-xs">
+<!-- Prominent Host Party CTA -->
+<button class="w-full relative overflow-hidden group py-3 px-space-md rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(160,120,255,0.4)] active:scale-[0.98] transition-all" id="startPartyBtn">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">groups</span>
+<span>Host Watch Party Now</span>
+<span class="material-symbols-outlined text-[18px] opacity-80 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<!-- Secondary CTA Grid -->
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="py-2.5 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px] text-tertiary">calendar_clock</span>
+<span>Schedule</span>
+</button>
+<button class="py-2.5 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-all" id="watchlistBtn" onclick="toggleWatchlist()">
+<span class="material-symbols-outlined text-[18px] text-primary" id="watchlistIcon">bookmark_add</span>
+<span id="watchlistText">Watchlist</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Friends Who Want To Watch (Social Sync Hook) -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col space-y-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">favorite</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Mutual Watchlist</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed bg-secondary-container/40 px-2 py-0.5 rounded-full">4 Friends</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        These friends have this title saved. Start a sync room and enjoy the premiere together!
+      </p>
+<div class="flex items-center justify-between pt-space-xs">
+<!-- Avatar Stack -->
+<div class="flex items-center -space-x-2.5">
+<div class="relative group">
+<img class="w-9 h-9 rounded-full object-cover shadow-md" data-alt="Close-up avatar portrait of a young woman with neon pink hair in cinematic warm lighting, digital streaming user profile picture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwFQ8X6QD7H6dzR1eAQMe12NAggosieYVFDacPYGIsZ4waKrsbUA3mTObDQ0mIULdEJuFkf9NolL3sIukqHbhmVP6q8IG0A7-mt6bX5rA70phPEwoYE21B1NOpP_IrmGcQTL-uuckXvpz2pyTnTq108qqDATNyf28SJW3WGD70okYpYdetEQH70VS9Ke17OqpM4cBF50h5GdGrG6VetW58h6-22YTOxSIdPpBm_yjd"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_6px_rgba(255,176,205,0.8)]"></span>
+</div>
+<div class="relative group">
+<img class="w-9 h-9 rounded-full object-cover shadow-md" data-alt="Portrait photo of a young man with glasses, stylish blue ambient lighting, smiling watch party community member." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9k10XYPISAID2APIlYS3iSAMJFnoErONsjHiCuFq1lZ-SJX-HUQynbR8ryNT-eIdnTMmnEexF2krwMabLoB2HxqRJNeY1-1jUvLRbqXd4sozsD-qAp2iwabpFDJQbFhZZ2OIofv4vxr8AdJhz1AbfrMOjJPO8u5TmBZVQZ5SQDWWukGLNYoyHdtoTuexljhDe2h09YTXhKSJG7j_VlnE6mKZRUkIrChvaaamgSxxG"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_6px_rgba(255,176,205,0.8)]"></span>
+</div>
+<div class="relative group">
+<img class="w-9 h-9 rounded-full object-cover shadow-md" data-alt="Cinematic profile portrait avatar of a woman with braided hair against a dark indigo nocturnal background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0dNIwQlwWyMI1yAU9QiRllOZ1RzU0rES0bkxSMH7aEXIUFm3_2-nhJS6DwdcjVUOioeej_nHUr_G9teql9HQQbi-lJ0gdmbPbDw5RIr_sDOQAIk0Vx5ZdeJpxjK_qkeiL2zyXD78uO_6fRcea55nX7EEfc1Mr9NkKBESormqVDjMiR0yAd_3g1-sQdrOdOp1EYxy-5-jRWIZZqfzhJXDm2QsPBB97H-p7bn8yR7LI"/>
+</div>
+<div class="relative group">
+<img class="w-9 h-9 rounded-full object-cover shadow-md" data-alt="Close up avatar portrait photo of a man smiling with soft theater backlight glow, movie enthusiast avatar." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_-Nq9Gd0QiDu1zZ1DJw8xIEHKDxKSLDzhmVxWiHc3pAzXT9O3aINtDbLw65-AK-3LM9nAK6fQ5W7g5iO4RFNf7x0kCLQ3TYAB4DvP36fiN1I3vGHaE5v98Re2ujZyc9LiS0JlueEvH_DptOmwinkvuUEJL2rRv7IK6GCFm1eDPvGVzhu4LPk2XUKdecgV1O96Zl43XLISU0X_0lcAu9jEa2rzlS7LJRabP9yVOgWB"/>
+</div>
+</div>
+<!-- Invite Shortcut -->
+<button class="py-2 px-3 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1 active:scale-95 transition-all shadow-[0_0_12px_rgba(170,2,102,0.3)]" id="inviteAllBtn" onclick="inviteAllFeedback()">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span id="inviteBtnLabel">Invite All (4)</span>
+</button>
+</div>
+</div>
+<!-- Synopsis Block -->
+<div class="flex flex-col space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Synopsis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 leading-relaxed" id="synopsisText">
+        Thirty years after the events of the first film, a new Blade Runner, LAPD Officer K (Ryan Gosling), unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard (Harrison Ford), a former LAPD blade runner who has been missing for three decades.
+      </p>
+<button class="self-start font-label-md text-label-md text-primary hover:underline" id="moreBtn" onclick="toggleSynopsis()">
+        Read more
+      </button>
+</div>
+<!-- Director & Cast Strip -->
+<div class="flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Director &amp; Cast</h3>
+<span class="font-label-sm text-label-sm text-outline">Full Cast</span>
+</div>
+<div class="flex gap-space-sm overflow-x-auto no-scrollbar pb-1">
+<!-- Denis Villeneuve (Director) -->
+<div class="flex flex-col items-center min-w-[76px] space-y-1.5 flex-shrink-0">
+<div class="relative w-16 h-16 rounded-full overflow-hidden bg-surface-container-high shadow-md">
+<img class="w-full h-full object-cover" data-alt="Headshot of film director Denis Villeneuve in dark studio lighting looking thoughtful with soft cinematic key light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZlvnqcWPw4Ys7z47grvORQ4vGNb9eVJ_d89pOj5o6OUiMUzM9Fe1pB1f5IjlMH-2MYJj6ikjHWydam1J97zcCEMI3uk9_PDxtjUpBPla5Et1j6iBpJ8rNu4uUbF-7UdW6W-xxmVXeO6urEYvQ0kkXnM3my5LSFgFtiP0c8bIfyCzk-R5fVodxsIJd4D9E6qAjX6D2axne8H2Z79DuWD5EDKmsKgM8QT_s66OUCbZH"/>
+</div>
+<div class="text-center">
+<span class="font-label-md text-label-md text-on-surface block truncate max-w-[76px]">Denis V.</span>
+<span class="font-label-sm text-label-sm text-tertiary block">Director</span>
+</div>
+</div>
+<!-- Ryan Gosling -->
+<div class="flex flex-col items-center min-w-[76px] space-y-1.5 flex-shrink-0">
+<div class="relative w-16 h-16 rounded-full overflow-hidden bg-surface-container-high shadow-md">
+<img class="w-full h-full object-cover" data-alt="Cinematic portrait headshot of Ryan Gosling as Officer K with subtle neon amber highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNvjgMODMGGtRou1R7RjzcBDmUa8s3pE3t4lVIRivbYhbEfHgCQOMsZnAq3dtfn_FZsNdZCNyT5IC-OW_tia_7W2lgvAi0A3VMS27ZIVVvJ4_PuA1IR4viNQG6ii-EJNzxxIKNp8fxnyUJWWuIVx86cEV_R0AF-hfOOi2Cyp_WBxe2ZJKUtKxYf-ZHun0nf0qe828RQx7qO_JPXO5BoGvGdeY5hOQZ7hpCYMUalV9z"/>
+</div>
+<div class="text-center">
+<span class="font-label-md text-label-md text-on-surface block truncate max-w-[76px]">Ryan G.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Officer K</span>
+</div>
+</div>
+<!-- Harrison Ford -->
+<div class="flex flex-col items-center min-w-[76px] space-y-1.5 flex-shrink-0">
+<div class="relative w-16 h-16 rounded-full overflow-hidden bg-surface-container-high shadow-md">
+<img class="w-full h-full object-cover" data-alt="Dramatic portrait headshot of Harrison Ford as Rick Deckard with brooding cinematic warm rim light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiQ8eRxgygQXrUcHG3LW3ueaPrYZBQjIJU1fbYX9fUKE-7l1l46VM-fla6U0NY25edaLmztoGFc1HHx0WGbcBaOE05t86m63LyrMmryOy9Grwy6RnZ54NT71nzMGm27L_eAye64cVBIzvGNK-tJSU2yekJjD5AJYGLJMHeMMKihlYcUTAvaFHxpW0m1I1elV_qZ4UxbK0u38Px6ZOhHgi5j8a7X9pgiUwz9gW76S89"/>
+</div>
+<div class="text-center">
+<span class="font-label-md text-label-md text-on-surface block truncate max-w-[76px]">Harrison F.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Rick Deckard</span>
+</div>
+</div>
+<!-- Ana de Armas -->
+<div class="flex flex-col items-center min-w-[76px] space-y-1.5 flex-shrink-0">
+<div class="relative w-16 h-16 rounded-full overflow-hidden bg-surface-container-high shadow-md">
+<img class="w-full h-full object-cover" data-alt="Ethereal glowing portrait headshot of Ana de Armas as holographic Joi with soft violet and cyan cyberpunk light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPtnn_ZETtoZJvUku4PyOW8oewJmyAD42Xeb0azV0wU7v_MYxytXxYc56E3Ik8TKvC_ln87U-ixXEY1ykVYgJchC8_IYinfnq8ZIU8BWCEPPwCNdMQ5qv8XgrjRXDcifEit4lmoRVJRrtNd2T2ia5ThQFsb7TYpBLUU-ZCF0gVMaq0CaLSpAWDTG5oHx93Fn0o5qpXWKIFsGCvI6FNtbN1nxHP-rhFlQwQP13m1BSB"/>
+</div>
+<div class="text-center">
+<span class="font-label-md text-label-md text-on-surface block truncate max-w-[76px]">Ana de A.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Joi</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Official Trailer Card -->
+<div class="flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Official Trailer</h3>
+<span class="font-label-sm text-label-sm text-primary">2:18 HD</span>
+</div>
+<div class="relative w-full aspect-video rounded-xl overflow-hidden bg-surface-container-low shadow-lg group cursor-pointer">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Trailer thumbnail frame showing a futuristic spinner vehicle flying through massive orange dust storms in Las Vegas ruins from Blade Runner 2049, epic cinematic frame with colossal broken statue." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDuC5WLSYO9OjSk7XYqEOS3PTiXxFGCmENpUYjD3e3QChJG3urZSerGvdr7silZTxLYPtXAPxDu9_YCJpZviQt6LIsMY-h3CV6oHQDdiXspLvUKwgXYlEduwzjiaZVxa-TEYsNrHK5CM-133JsqfhBOlClb--3sAaaCVuOBzNS2xx5hFCj0J2UjwuPFPn0881261p7t6-OwmmFgj_ljYtBv7e_gHrSjXSOj3iAFQaPD')">
+</div>
+<div class="absolute inset-0 bg-surface-container-lowest/40 backdrop-blur-[2px] flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-[0_0_16px_rgba(208,188,255,0.6)] group-hover:scale-110 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[28px] ml-0.5" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-2 left-2.5 px-2 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="font-label-sm text-label-sm text-on-surface">Teaser 2 • Warner Bros.</span>
+</div>
+</div>
+</div>
+<!-- Watch Party Configuration & Settings Drawer Preview -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col space-y-space-md shadow-xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Party Preset Settings</h3>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-container/30 px-2 py-0.5 rounded-full font-bold">HOST MODE</span>
+</div>
+<!-- Setting 1: Privacy Toggle -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span>Room Access</span>
+</label>
+<div class="grid grid-cols-3 gap-1 bg-surface-container-lowest p-1 rounded-lg">
+<button class="privacy-btn py-1.5 text-center rounded font-label-sm text-label-sm transition-all bg-primary-container text-on-primary" onclick="setPrivacy(this)">
+            Friends Only
+          </button>
+<button class="privacy-btn py-1.5 text-center rounded font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface" onclick="setPrivacy(this)">
+            Invite Link
+          </button>
+<button class="privacy-btn py-1.5 text-center rounded font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface" onclick="setPrivacy(this)">
+            Public
+          </button>
+</div>
+</div>
+<!-- Setting 2: Playback Sync Authority -->
+<div class="flex items-center justify-between py-1">
+<div class="flex flex-col pr-2">
+<span class="font-label-md text-label-md text-on-surface">Sync Control Lock</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Only host can pause, seek, and fast-forward</span>
+</div>
+<button class="w-12 h-6 rounded-full bg-primary-container relative flex items-center px-0.5 transition-colors" id="syncToggle" onclick="toggleSyncLock()">
+<div class="w-5 h-5 rounded-full bg-on-primary shadow-md transform translate-x-6 transition-transform" id="syncIndicator"></div>
+</button>
+</div>
+<!-- Setting 3: Live Channels Defaults -->
+<div class="flex items-center justify-between py-1">
+<div class="flex flex-col pr-2">
+<span class="font-label-md text-label-md text-on-surface">Spatial Voice Chat</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Auto-ducking movie audio during speech</span>
+</div>
+<button class="w-12 h-6 rounded-full bg-primary-container relative flex items-center px-0.5 transition-colors" id="voiceToggle" onclick="toggleVoiceDucking()">
+<div class="w-5 h-5 rounded-full bg-on-primary shadow-md transform translate-x-6 transition-transform" id="voiceIndicator"></div>
+</button>
+</div>
+<!-- Settings summary badge -->
+<div class="p-2.5 rounded-lg bg-surface-container-high/60 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex-1">
+          Preset saved for your next session. Room link will be copied upon launch.
+        </span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Synopsis Expand/Collapse
+  function toggleSynopsis() {
+    const syn = document.getElementById('synopsisText');
+    const btn = document.getElementById('moreBtn');
+    if (syn.classList.contains('line-clamp-3')) {
+      syn.classList.remove('line-clamp-3');
+      btn.innerText = 'Show less';
+    } else {
+      syn.classList.add('line-clamp-3');
+      btn.innerText = 'Read more';
+    }
+  }
+
+  // Watchlist Toggle
+  let inWatchlist = false;
+  function toggleWatchlist() {
+    inWatchlist = !inWatchlist;
+    const btn = document.getElementById('watchlistBtn');
+    const icon = document.getElementById('watchlistIcon');
+    const text = document.getElementById('watchlistText');
+    if (inWatchlist) {
+      icon.innerText = 'bookmark_added';
+      icon.style.fontVariationSettings = "'FILL' 1";
+      text.innerText = 'In Watchlist';
+      btn.classList.add('bg-primary-container/20', 'text-primary');
+    } else {
+      icon.innerText = 'bookmark_add';
+      icon.style.fontVariationSettings = "'FILL' 0";
+      text.innerText = 'Watchlist';
+      btn.classList.remove('bg-primary-container/20', 'text-primary');
+    }
+  }
+
+  // Invite All Animation Microinteraction
+  function inviteAllFeedback() {
+    const label = document.getElementById('inviteBtnLabel');
+    const btn = document.getElementById('inviteAllBtn');
+    label.innerText = 'Invites Sent! ✨';
+    btn.classList.remove('bg-secondary-container');
+    btn.classList.add('bg-primary-container', 'text-on-primary');
+    setTimeout(() => {
+      label.innerText = 'Invite All (4)';
+      btn.classList.remove('bg-primary-container', 'text-on-primary');
+      btn.classList.add('bg-secondary-container');
+    }, 2800);
+  }
+
+  // Settings: Privacy Segmented Control
+  function setPrivacy(selectedBtn) {
+    document.querySelectorAll('.privacy-btn').forEach(btn => {
+      btn.className = 'privacy-btn py-1.5 text-center rounded font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface';
+    });
+    selectedBtn.className = 'privacy-btn py-1.5 text-center rounded font-label-sm text-label-sm transition-all bg-primary-container text-on-primary';
+  }
+
+  // Settings: Sync Lock Switch
+  let syncLocked = true;
+  function toggleSyncLock() {
+    syncLocked = !syncLocked;
+    const bg = document.getElementById('syncToggle');
+    const ind = document.getElementById('syncIndicator');
+    if (syncLocked) {
+      bg.className = 'w-12 h-6 rounded-full bg-primary-container relative flex items-center px-0.5 transition-colors';
+      ind.className = 'w-5 h-5 rounded-full bg-on-primary shadow-md transform translate-x-6 transition-transform';
+    } else {
+      bg.className = 'w-12 h-6 rounded-full bg-surface-container-high relative flex items-center px-0.5 transition-colors';
+      ind.className = 'w-5 h-5 rounded-full bg-outline shadow-md transform translate-x-0 transition-transform';
+    }
+  }
+
+  // Settings: Voice Ducking Switch
+  let voiceEnabled = true;
+  function toggleVoiceDucking() {
+    voiceEnabled = !voiceEnabled;
+    const bg = document.getElementById('voiceToggle');
+    const ind = document.getElementById('voiceIndicator');
+    if (voiceEnabled) {
+      bg.className = 'w-12 h-6 rounded-full bg-primary-container relative flex items-center px-0.5 transition-colors';
+      ind.className = 'w-5 h-5 rounded-full bg-on-primary shadow-md transform translate-x-6 transition-transform';
+    } else {
+      bg.className = 'w-12 h-6 rounded-full bg-surface-container-high relative flex items-center px-0.5 transition-colors';
+      ind.className = 'w-5 h-5 rounded-full bg-outline shadow-md transform translate-x-0 transition-transform';
+    }
+  }
+</script></main></body></html>
